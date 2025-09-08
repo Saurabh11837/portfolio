@@ -32,7 +32,7 @@ const Homepage = () => {
           className="flex flex-col items-center justify-center w-full"
         >
           <div className=" flex flex-col items-center justify-center gap-4  ">
-            <p className="font-bold text-gray-200">Hello, I'm</p>
+            <p className="font-bold text-gray-200">Hello, I&apos;m</p>
             <p className="font-bold text-5xl text-blue-400">Aryan Patel</p>
           </div>
           <div className="">
