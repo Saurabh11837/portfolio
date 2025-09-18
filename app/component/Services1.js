@@ -14,7 +14,7 @@ const Services1 = () => {
 
   return (
     <>
-      <section id="Services1" className="scroll-mt-20">
+      <section id="Services1" className="scroll-mt-10">
         <div className="flex flex-col justify-center items-center p-10 ">
           <p className=" text-gray-400">My Services</p>
           <h1 className=" font-bold text-4xl text-blue-500 ">What I Offer</h1>

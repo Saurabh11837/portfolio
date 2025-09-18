@@ -9,7 +9,7 @@ const Skill1 = () => {
   }, []);
 
   return (
-    <section id="Skills" className="scroll-mt-20">
+    <section id="Skills" className="scroll-mt-10">
       <div className="flex flex-col justify-center items-center p-10 md:mt-20 ">
         <p className=" text-gray-400">My Skills</p>
         <h1 className=" font-bold text-4xl text-blue-500 ">My Experience</h1>

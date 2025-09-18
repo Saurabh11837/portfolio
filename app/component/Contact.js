@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id="Contact" className="scroll-mt-20">
+      <section id="Contact" className="scroll-mt-10">
         {/* Heading */}
         <div
           className="flex flex-col justify-center items-center p-10"

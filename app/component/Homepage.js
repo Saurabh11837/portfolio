@@ -25,7 +25,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <section id="Home" className="scroll-mt-20">
+    <section id="Home" className="scroll-mt-10">
       <div className=" flex flex-col md:flex-row   items-center justify-center w-full h-full   py-10 mt-15">
         {/* Left side */}
         <div className="flex items-center w-full md:w-1/2 ">
