@@ -17,7 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="w-full h-full scroll-mt-10" id="About">
+    <section className="w-full h-full scroll-mt-9" id="About">
       {/* Heading */}
       <div className="flex flex-col justify-center items-center py-10">
         <p
