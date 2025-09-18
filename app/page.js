@@ -15,9 +15,6 @@ import RecentProject from "./component/RecentProject1";
 import Footer from "./component/Footer";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 }); // 1 second animation
-  }, []);
   const router = useRouter();
   return (
     <>
