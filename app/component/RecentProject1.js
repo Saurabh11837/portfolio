@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import amazon from "../component/asset/Amazon-Logo.jpeg";
 import portfolio from "../component/asset/portfolio.png";
+import movies from "@/app/component/asset/movies.jpg";
 import todo from "../component/asset/work3.jpg";
 import { GoTriangleRight } from "react-icons/go";
 import AOS from "aos";
@@ -52,7 +53,7 @@ const RecentProject = () => {
                 <div className="flex">
                   <a
                     className="text-sm text-blue-500"
-                    href="file:///H:/Delata%20Batch%20class/CSS/portfolioNew.html#about"
+                    href="https://saurabhportfolio-eight.vercel.app/"
                   >
                     Demo
                   </a>
@@ -63,6 +64,29 @@ const RecentProject = () => {
             </div>
           </div>
 
+          {/* Movies Website */}
+          <div data-aos="fade-right">
+            <div className="m-5 bg-gray-700 h-70 w-70 px-3 py-5 rounded-2xl flex flex-col items-center justify-between shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="w-43">
+                <Image src={movies} alt="#" className="rounded-2xl h-39 w-65" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <p className="font-bold text-xl text-gray-200">Movies-site</p>
+                <div className="flex">
+                  <a
+                    className="text-sm text-blue-500"
+                    href="https://movies-website-lovat.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Demo
+                  </a>
+                  <GoTriangleRight className="text-sm text-blue-500 h-5 w-5" />
+                </div>
+
+              </div>
+            </div>
+          </div>
           {/* To-do Project */}
           <div data-aos="fade-right">
             <div className="m-5 bg-gray-700 h-70 w-70 px-3 py-5 rounded-2xl flex flex-col items-center justify-between shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
