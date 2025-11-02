@@ -30,19 +30,7 @@ export default function HeroSection() {
           </h1>
         </div>
 
-        <h2 className="text-2xl md:text-4xl font-semibold text-yellow-400">
-          <ReactTyped
-            strings={[
-              "Backend Developer",
-              "Full Stack Engineer",
-              "MERN Developer",
-              "Problem Solver",
-            ]}
-            typeSpeed={70}
-            backSpeed={50}
-            loop
-          />
-        </h2>
+        
 
         <p className="text-gray-300 text-base md:text-lg max-w-xl">
           Passionate about crafting scalable, secure, and modern web
@@ -52,7 +40,7 @@ export default function HeroSection() {
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
           <a
-            href="/RupeshCV.pdf"
+            href="/Rupesh.pdf"
             download
             className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold text-white shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all"
           >
