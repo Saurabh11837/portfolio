@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import Image from "next/image";
-import img1 from "../component/asset/saurabh1.jpg";
+import img1 from "../component/asset/rupesh.jpg";
 
 const Navbar1 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navbar1 = () => {
             className="hidden md:block h-10 w-10 rounded-full"
           />
           <span className="text-blue-400 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Saurabh
+            Rupesh
           </span>
         </a>
 

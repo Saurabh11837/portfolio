@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     AOS.init({
@@ -20,10 +21,12 @@ const Contact = () => {
     e.preventDefault();
     console.log("Name:", name);
     console.log("Email:", mail);
+    console.log("Email:", message);
 
     // reset after submit
     setName("");
     setMail("");
+    setMessage("");
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.(com|in|org)$/;
@@ -36,7 +39,7 @@ const Contact = () => {
           className="flex flex-col justify-center items-center p-10"
           data-aos="fade-down"
         >
-          <p className=" text-gray-400">Get in touch</p>
+          
           <h1 className=" font-bold text-4xl text-blue-500 ">Contact Me</h1>
         </div>
 
@@ -76,7 +79,7 @@ const Contact = () => {
                   <div className="flex flex-col items-center justify-center">
                     <FaWhatsapp className="text-gray-100 h-8 w-10 md:h-8 md:w-10" />
                     <p className="text-gray-100 font-bold text-lg">WhatsApp</p>
-                    <p className=" text-gray-400 text-sm">+91_79794989</p>
+                    <p className=" text-gray-400 text-sm">+91_9693921709</p>
                   </div>
                   <div className="flex">
                     <p className="text-sm text-blue-500">Demo </p>
@@ -163,6 +166,11 @@ const Contact = () => {
                   </label>
                   <textarea
                     placeholder="Write your Message"
+                    type="text"
+                    
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
                     rows={8}
                     className="w-full p-3 rounded-lg border border-gray-500 bg-[#0a0f1a]
                      text-gray-200 placeholder-gray-500 focus:outline-none
