@@ -36,7 +36,7 @@ export default function HeroSection() {
           Passionate about crafting scalable, secure, and modern web
           applications with a focus on performance and user experience.
         </p>
-
+    
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
           <a
