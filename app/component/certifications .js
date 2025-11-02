@@ -6,13 +6,14 @@ import "aos/dist/aos.css";
 
 const certifications = [
   { name: "AI Workshop", image: "/certificates/Ai_Workshop.jpg" },
-  { name: "React Developer", image: "/certificates/1.jpg" },
-  { name: "Python Basics", image: "/certificates/2.jpg" },
-  { name: "Full Stack Web Dev", image: "/certificates/3.jpg" },
-  { name: "Frontend Bootcamp", image: "/certificates/4.jpg" },
-  { name: "JavaScript Mastery", image: "/certificates/5.png" },
-  { name: "NodeJS Advanced", image: "/certificates/6.jpg" },
-  { name: "Database Design", image: "/certificates/7.jpg" },
+  { name: "Low-Level Design of Payment", image: "/certificates/7.jpg" },
+  { name: "Web Development", image: "/certificates/1.jpg" },
+  { name: "Full Stack Development", image: "/certificates/2.jpg" },
+  { name: "HackManthan2025", image: "/certificates/3.jpg" },
+  { name: "Hackthon", image: "/certificates/4.jpg" },
+  { name: "Certificate of Momentum", image: "/certificates/5.png" },
+  { name: "Intro to Programmig", image: "/certificates/6.jpg" },
+  
 ];
 
 const Certification = () => {
