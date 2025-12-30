@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import profile from "../component/asset/rupesh.jpg"; // apni image ka path yahan likho
+import profile from "../component/asset/saurabhProfile.png"; // apni image ka path yahan likho
 
 export default function HeroSection() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div>
           <p className="text-gray-400 text-lg md:text-xl">Hello, I&apos;m</p>
           <h1 className="text-3xl md:text-6xl font-bold text-blue-400 drop-shadow-[0_0_10px_rgba(0,140,255,0.5)]">
-            Mr. Rupesh Kumar
+            Mr. Saurabh Kumar
           </h1>
         </div>
 
@@ -40,7 +40,7 @@ export default function HeroSection() {
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
           <a
-            href="/Rupesh.pdf"
+            href="/Saurabh ResumeNew.pdf"
             download
             className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold text-white shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all"
           >

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaAlignJustify } from "react-icons/fa";
 import Image from "next/image";
-import img1 from "../component/asset/rupesh.jpg";
+import img1 from "../component/asset/saurabhNav.png";
 
 const Navbar1 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,12 +30,14 @@ const Navbar1 = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
-            src={img1}
+            src="/images/saurabhNav.png"
             alt="#"
-            className="hidden md:block h-10 w-10 rounded-full"
+            className="hidden md:block rounded-full"
+            width={40}  // Width of the image
+            height={40} // Height of the image
           />
           <span className="text-blue-400 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Rupesh
+            Saurabh
           </span>
         </a>
 

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import img1 from "../component/asset/rupesh.jpg";
+
 import { FaMedal, FaShoppingBag } from "react-icons/fa";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import AOS from "aos";
@@ -34,7 +34,14 @@ const About = () => {
         {/* Image */}
         <div className="flex items-center justify-center" data-aos="fade-right">
           <div className="hidden md:block h-50 w-50 md:h-90 md:w-90 rounded-2xl">
-            <Image src={img1} alt="#" className="rounded-2xl" />
+            
+            <Image
+              src="/images/saurabhProfile2.png" // Public folder path
+              alt="#"
+              className="rounded-2xl"
+              width={350} // Desired width for large screens
+              height={350} // Desired height for large screens
+            />
           </div>
         </div>
 
