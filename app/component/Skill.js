@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Skill = () => {
   return (
     <div>
@@ -22,7 +22,7 @@ const Skill = () => {
                 { name: "DSA (Trees)", level: "Intermediate", icon: "/icons/dsa.png" },
               ].map((skill) => (
                 <div key={skill.name} className="flex items-center gap-3 bg-[#0B0C10] p-3 rounded-xl">
-                  <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                  <Image src={skill.icon} alt={skill.name} className="w-8 h-8" />
                   <div>
                     <p className="font-semibold">{skill.name}</p>
                     <p className="text-sm text-gray-400">{skill.level}</p>
@@ -46,7 +46,7 @@ const Skill = () => {
                 { name: "Next.js", level: "Intermediate", icon: "/icons/next.png" },
               ].map((skill) => (
                 <div key={skill.name} className="flex items-center gap-3 bg-[#0B0C10] p-3 rounded-xl">
-                  <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                  <Image src={skill.icon} alt={skill.name} className="w-8 h-8" />
                   <div>
                     <p className="font-semibold">{skill.name}</p>
                     <p className="text-sm text-gray-400">{skill.level}</p>
@@ -68,7 +68,7 @@ const Skill = () => {
                 { name: "Mongoose", level: "Intermediate", icon: "/icons/mongoose.png" },
               ].map((skill) => (
                 <div key={skill.name} className="flex items-center gap-3 bg-[#0B0C10] p-3 rounded-xl">
-                  <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                  <Image src={skill.icon} alt={skill.name} className="w-8 h-8" />
                   <div>
                     <p className="font-semibold">{skill.name}</p>
                     <p className="text-sm text-gray-400">{skill.level}</p>
@@ -91,7 +91,7 @@ const Skill = () => {
                 { name: "Postman / Thunder Client", level: "Intermediate", icon: "/icons/postman.png" },
               ].map((skill) => (
                 <div key={skill.name} className="flex items-center gap-3 bg-[#0B0C10] p-3 rounded-xl">
-                  <img src={skill.icon} alt={skill.name} className="w-8 h-8" />
+                  <Image src={skill.icon} alt={skill.name} className="w-8 h-8" />
                   <div>
                     <p className="font-semibold">{skill.name}</p>
                     <p className="text-sm text-gray-400">{skill.level}</p>
