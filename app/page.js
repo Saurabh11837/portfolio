@@ -29,7 +29,7 @@ export default function Home() {
         <Skill/>
         
         <RecentProject />
-        <Certification />
+        {/* <Certification /> */}
         <Contact />
         <Footer />
       </div>

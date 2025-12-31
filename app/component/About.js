@@ -2,17 +2,15 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-
-import { FaMedal, FaShoppingBag } from "react-icons/fa";
-import { MdOutlineSupportAgent } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const About = () => {
+
   useEffect(() => {
     AOS.init({
-      duration: 1200, // animation speed
-      once: false, // true me sirf ek baar trigger hoga, false me humesa chalega
+      duration: 1200,
+      once: false,
     });
   }, []);
 
@@ -20,85 +18,50 @@ const About = () => {
     <section className="w-full h-full scroll-mt-9" id="About">
       {/* Heading */}
       <div className="flex flex-col justify-center items-center py-10">
-        
-        <h1
-          className="font-bold text-4xl text-blue-500"
-          // data-aos="fade-up"
-          // data-aos-delay="200"
-        >
-          About Me
-        </h1>
+        <h1 className="font-bold text-4xl text-blue-500">About Me</h1>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center md:gap-15">
+        
         {/* Image */}
         <div className="flex items-center justify-center" data-aos="fade-right">
-          <div className="hidden md:block h-50 w-50 md:h-90 md:w-90 rounded-2xl">
-            
+          <div className="hidden md:block rounded-2xl">
             <Image
-              src="/images/saurabhProfile2.png" // Public folder path
-              alt="#"
+              src="/images/saurabhProfile2.png"
+              alt="Saurabh Kumar"
               className="rounded-2xl"
-              width={350} // Desired width for large screens
-              height={350} // Desired height for large screens
+              width={350}
+              height={350}
             />
           </div>
         </div>
 
         {/* Content */}
         <div
-          className="w-full md:w-1/2 flex flex-col items-center justify-center gap-10"
+          className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6 px-5 md:px-0"
           data-aos="fade-left"
         >
-          {/* Boxes */}
-          {/* <div className="flex flex-col md:flex-row gap-2">
-            <div
-              className="bg-gray-800 rounded-2xl h-40 w-80 md:w-60 flex flex-col items-center justify-center gap-2"
-              data-aos="zoom-in"
-            >
-              <FaMedal className="h-10 w-10 text-2xl font-bold text-blue-500" />
-              <p className="font-bold text-xl text-gray-100">Experience</p>
-              <p className="text-sm text-gray-400">Fresher</p>
-            </div>
+          <p className="text-lg text-gray-300 leading-relaxed text-justify md:text-left">
 
-            <div
-              className="bg-gray-800 rounded-2xl h-40 w-80 md:w-60 flex flex-col items-center justify-center gap-2"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <FaShoppingBag className="h-10 w-10 text-2xl font-bold text-blue-500" />
-              <p className="font-bold text-xl text-gray-100">Completed</p>
-              <p className="text-sm text-gray-400">5 + Projects</p>
-            </div>
+            I’m a <span className="text-blue-400 font-semibold">Full Stack</span> and  
+            <span className="text-blue-400 font-semibold"> MERN Stack Developer</span>, currently working as a 
+            <span className="text-blue-400 font-semibold"> Frontend Intern at Nybex Pvt. Ltd.</span>  
+            where I build modern, scalable, and responsive web applications using  
+            <span className="text-blue-400 font-semibold"> React.js, Next.js, Node.js, Express.js, and MongoDB.</span>
+            <br /><br />
 
-            <div
-              className="bg-gray-800 rounded-2xl h-40 w-80 md:w-60 flex flex-col items-center justify-center gap-2"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            >
-              <MdOutlineSupportAgent className="h-10 w-10 text-2xl font-bold text-blue-500" />
-              <p className="font-bold text-xl text-gray-100">Support</p>
-              <p className="text-sm text-gray-400">Online 24/7</p>
-            </div>
-          </div> */}
+            I focus on writing clean code, solving complex problems, integrating APIs, 
+            and building secure backend services.  
+            <br /><br />
 
-          {/* Paragraph */}
-          <div data-aos="fade-up">
-            <p className="text-xl text-justify px-5 md:px-0 md:text-left text-gray-300">
-              I am currently pursuing an MCA in Artificial Intelligence &
-              Machine Learning at Lovely Professional University in
-              collaboration with IBM. With strong foundations in Java, Python,
-              MySQL, Data Science, and AI, I am passionate about applying
-              technology to solve real‑world challenges. My strengths lie in
-              problem‑solving, analytical thinking, and creativity, which I
-              channel into building practical, scalable, and impactful
-              solutions. I enjoy exploring data‑driven insights, developing
-              intelligent applications, and continuously expanding my
-              technical expertise.
-            </p>
-          </div>
+            I am skilled in authentication (JWT, Cookies, Sessions), role-based access control (Admin/User), 
+            file uploads using Multer/Cloudinary, API security (Rate limiting, Helmet, CORS),  
+            error-handling architecture, MVC pattern, and advanced middlewares.
+            <br /><br />
 
-          
+            I also actively use GitHub, Postman, Thunder Client, and deploy applications on Vercel.  
+            My goal is to build real-world impactful applications and grow as a strong Full Stack Developer.
+          </p>
         </div>
       </div>
     </section>

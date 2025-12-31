@@ -57,21 +57,21 @@ export default function HeroSection() {
         {/* SOCIAL ICONS */}
         <div className="flex gap-5 justify-center md:justify-start mt-6">
           <a
-            href="https://linkedin.com/in/rupesh-kumar12"
+            href="https://www.linkedin.com/in/saurabh-kumar-24686a290"
             target="_blank"
             className="p-3 bg-gray-800 rounded-full hover:bg-blue-600 transition-all"
           >
             <FaLinkedinIn className="text-xl" />
           </a>
           <a
-            href="https://github.com/Rupeshkumar96"
+            href="https://github.com/Saurabh11837"
             target="_blank"
             className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-all"
           >
             <FaGithub className="text-xl" />
           </a>
           <a
-            href="mailto:rupeshprasad103@gmail.com"
+            href="#Contact"
             className="p-3 bg-gray-800 rounded-full hover:bg-red-500 transition-all"
           >
             <FaEnvelope className="text-xl" />
