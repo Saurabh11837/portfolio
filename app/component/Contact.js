@@ -17,19 +17,53 @@ const Contact = () => {
     });
   }, []);
 
-  function onSubmit(e) {
-    e.preventDefault();
-    console.log("Name:", name);
-    console.log("Email:", mail);
-    console.log("Email:", message);
+  
+  const emailRegex = /^[^\s@]+@[^\s@]+\.(com|in|org)$/;
+  // Backend data send karne ke liye function likh sakte hain yahan.
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
+  const handelSubmit = async(e)=>{
+    e.preventDefault();
+
+    // if (!emailRegex.test(mail)) {
+    //   alert("Please enter a valid email (must end with .com, .in, or .org)");
+    //   return;
+    // }
+    // onSubmit(e);
+    console.log("Name:", formData.name);
+    console.log("Email:", formData.email);
+    console.log("Message:", formData.message);
+
+    // Yahan backend ko data bhejne ka code likhen
+    const response=await fetch('http://localhost:5000/contact',{
+      method:'POST',
+      body:JSON.stringify(formData),
+      headers:{
+        'Content-Type':'application/json '
+      }
+
+    })
+
+
+
+    alert("Form submitted successfully!");
     // reset after submit
-    setName("");
-    setMail("");
-    setMessage("");
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    } );
+    console.log("Form Data Submitted:", formData);
+    
+
+
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.(com|in|org)$/;
+  
 
   return (
     <>
@@ -114,7 +148,8 @@ const Contact = () => {
             </h2>
             <div className="mt-5">
               <form
-                onSubmit={onSubmit}
+                // onSubmit={onSubmit}
+                // onSubmit={handelSubmit}
                 className="w-full shadow-lg rounded-2xl space-y-6"
                 data-aos="fade-up"
               >
@@ -123,17 +158,24 @@ const Contact = () => {
                   <label className="mb-1 font-medium text-gray-300">
                     Name :
                   </label>
+                  
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+
                     required
+                    
                     minLength={3}
                     className="w-full p-3 rounded-lg border border-gray-500 bg-[#0a0f1a]
                      text-gray-200 placeholder-gray-500 focus:outline-none
                      focus:ring-2 focus:ring-blue-400 resize-none"
+                     
                   />
+
                 </div>
 
                 {/* Email */}
@@ -142,10 +184,14 @@ const Contact = () => {
                     Mail :
                   </label>
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     placeholder="Enter email"
-                    value={mail}
-                    onChange={(e) => setMail(e.target.value)}
+                    value={formData.email}
+                    // onChange={(e) => setMail(e.target.value)}
+                    onChange={(email)=>{
+                      setFormData({...formData, email:email.target.value})
+                    }}
                     required
                     className="w-full p-3 rounded-lg border border-gray-500 bg-[#0a0f1a]
                      text-gray-200 placeholder-gray-500 focus:outline-none
@@ -167,9 +213,12 @@ const Contact = () => {
                   <textarea
                     placeholder="Write your Message"
                     type="text"
-                    
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    name="message"
+                    value={formData.message}
+                    // onChange={(e) => setMessage(e.target.value)}
+                    onChange={(message)=>{
+                      setFormData({...formData, message:message.target.value})
+                    }}
                     required
                     rows={8}
                     className="w-full p-3 rounded-lg border border-gray-500 bg-[#0a0f1a]
@@ -180,6 +229,7 @@ const Contact = () => {
 
                 {/* Button */}
                 <button
+                  onClick={handelSubmit}
                   type="submit"
                   className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition"
                 >
